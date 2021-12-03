@@ -15,17 +15,17 @@ public class Ejercicio5 {
         while (true) {
             imprimirMenu();
             System.out.println("Digite una de las opciones: ");
-            int eleccionUsuarioMenú = lector.nextInt();
+            String eleccionUsuarioMenú = lector.nextLine();
 
-            if (eleccionUsuarioMenú == 1) {
+            if ("1".equals(eleccionUsuarioMenú)) {
                 ejercicio1();
-            } else if (eleccionUsuarioMenú == 2) {
+            } else if ("2".equals(eleccionUsuarioMenú)) {
                 ejercicio2();
-            } else if (eleccionUsuarioMenú == 3) {
+            } else if ("3".equals(eleccionUsuarioMenú)) {
               ejercicio3();
-            } else if (eleccionUsuarioMenú == 4) {
+            } else if ("4".equals(eleccionUsuarioMenú)) {
                 ejercicio4();
-            } else if (eleccionUsuarioMenú == 5) {
+            } else if ("5".equals(eleccionUsuarioMenú)) {
                 break;
             } else {
                 System.out.println("Elección Incorrecta!!!");
